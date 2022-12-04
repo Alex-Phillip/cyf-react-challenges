@@ -39,12 +39,12 @@ Write a plain HTML prototype (e.g. on codepen).  THEN, once you know the HTML yo
 
 The data is available in the file [./babyNamesData.json](./babyNamesData.json).
 
-Copy across this file to your src/ directory, and then import it.
+Copy across this file to your src/ directory, and then import it. 
 
 ## GitHub & Hosting:
 
 Add your project in github and host it on Netlify.
-
+ 
 The github repo name should be exactly:
 `baby-names-react`
 
