@@ -1,26 +1,28 @@
-import React from 'react';
+import React from "react";
 import BabyNamesData from "./babyNamesData.json";
 
-function sortAlphabetically(a, b) {
-    if (a.name < b.name) {
-        return -1;
-    } else if (a.name > b.name) {
-        return 1;
-    } else {
-        return 0;
-    };
+const sortAlphabetically = (a, b) => {
+  return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
 };
 
 const BabyNames = () => {
-    return (
-      <div>
-        <ul>
-          {BabyNamesData.sort(sortAlphabetically).map(({ name }) => (
-            <li key={name}>{name}</li>
-          ))}
-        </ul>
-      </div>
-    );
+  return (
+    <div>
+      <ul>
+        {BabyNamesData.sort(sortAlphabetically).map(({ name, sex }) =>
+          sex === "f" ? (
+            <li key={name} className="f-names">
+              {name}
+            </li>
+          ) : (
+            <li key={name} className="m-names">
+              {name}
+            </li>
+          )
+        )}
+      </ul>
+    </div>
+  );
 };
 
 export default BabyNames;

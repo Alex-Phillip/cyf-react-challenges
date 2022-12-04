@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.f-names {
+  color: red;
+}
+
+.m-names {
+  color: green;
+}
