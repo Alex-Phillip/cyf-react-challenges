@@ -37,10 +37,23 @@
   }
 }
 
+.baby-names-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .f-names {
   color: red;
+  padding: 1em;
+  border: solid 1px gold;
+  margin: 0.25em;
 }
 
 .m-names {
   color: green;
+  padding: 1em;
+  border: solid 1px silver;
+  margin: 0.25em;
 }

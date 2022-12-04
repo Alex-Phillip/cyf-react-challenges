@@ -8,7 +8,7 @@ const sortAlphabetically = (a, b) => {
 const BabyNames = () => {
   return (
     <div>
-      <ul>
+      <ul className="baby-names-list">
         {BabyNamesData.sort(sortAlphabetically).map(({ name, sex }) =>
           sex === "f" ? (
             <li key={name} className="f-names">
